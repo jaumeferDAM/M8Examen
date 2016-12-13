@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Aqui van los aciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ContadorAciertos" />
+
+    <TextView
+        android:text="Fallos:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ContadorAciertos"
+        android:layout_toRightOf="@+id/ContadorAciertos"
+        android:layout_toEndOf="@+id/ContadorAciertos"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/contadorErrades" />
+
+    <TextView
+        android:text="Enunciat D la pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContadorAciertos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textViewEnunciat" />
+
+    <Button
+        android:text="Seguent Pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/editTextResposta"
+        android:layout_toEndOf="@+id/editTextResposta"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/buttonSeguent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Introdueix la resposta"
+        android:ems="10"
+        android:id="@+id/editTextResposta"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textViewEnunciat"
+        android:layout_alignLeft="@+id/textViewEnunciat"
+        android:layout_alignStart="@+id/textViewEnunciat" />
+</RelativeLayout>
